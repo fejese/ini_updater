@@ -17,7 +17,8 @@ Just define this cookbook as a dependency and use the update_ini definition.
 
 e.g.
 
-```update_ini "/etc/php5/apache2/php.ini" do
+```ruby
+update_ini "/etc/php5/apache2/php.ini" do
     settings {
         "max_execution_time" => "300",
         "max_input_time" => "600",
@@ -25,7 +26,8 @@ e.g.
         "post_max_size" => "5M",
         "name" => "value"
     }
-end```
+end
+```
 
 Use ```nil``` as value to remove setting from the ini file.
 
