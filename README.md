@@ -24,7 +24,7 @@ update_ini "/etc/php5/apache2/php.ini" do
         "max_input_time" => "600",
         "max_input_vars" => "2100",
         "post_max_size" => "5M",
-        "name" => "value"
+        "setting_to_remove" => nil
     }
 end
 ```
